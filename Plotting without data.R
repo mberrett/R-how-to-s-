@@ -13,3 +13,11 @@ qplot(0,0) +
   geom_abline(slope = 2, intercept = (20), col = "red") +
   geom_abline(slope = 2, intercept = (-20), col = "blue") +
   geom_abline(slope = 1/2, intercept = (20), col = "green")
+
+
+# Quadratic
+qplot(0,2) +
+  stat_function(fun=exp) 
+# Or 
+ggplot(data.frame(x=c(0, 2)), aes(x)) + 
+  stat_function(fun=exp) # stat function
